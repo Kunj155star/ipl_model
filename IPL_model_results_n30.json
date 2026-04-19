@@ -1,0 +1,47 @@
+{
+  "n_runs": 30,
+  "statistics": {
+    "accuracy_before": {
+      "mean": 0.0,
+      "std": 0.0,
+      "sem": 0.0,
+      "ci_95": 0.0
+    },
+    "accuracy_after": {
+      "mean": 1.0,
+      "std": 0.0,
+      "sem": 0.0,
+      "ci_95": 0.0
+    },
+    "accuracy_reverse": {
+      "mean": 1.0,
+      "std": 0.0,
+      "sem": 0.0,
+      "ci_95": 0.0
+    },
+    "semblances": {
+      "mean": 50.0,
+      "std": 0.0,
+      "sem": 0.0,
+      "ci_95": 0.0
+    },
+    "ipls_total": {
+      "mean": 3558.733333333333,
+      "std": 132.65275731393035,
+      "sem": 24.21896916536602,
+      "ci_95": 47.4691795641174
+    },
+    "ipls_inter_pattern": {
+      "mean": 1977.8,
+      "std": 72.6410162468788,
+      "sem": 13.262374399504928,
+      "ci_95": 25.99425382302966
+    }
+  },
+  "significance_test": {
+    "t_statistic": "infinity",
+    "p_value": 0.0,
+    "cohens_d": "infinity",
+    "interpretation": "Highly significant (p < 0.001)"
+  }
+}
