@@ -2,6 +2,10 @@
 ## Biologically Realistic Crossing Dendrites — Trial-by-Trial Probabilistic Learning
 ### Volume: 10×10×10 = 1000 μm³ | 100 Simulations | Fixed Seed: 42
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19798352.svg)](https://doi.org/10.5281/zenodo.19798352)
+
+**Cite this repository:** Vadakkan KI. Inter-Postsynaptic Functional LINK (IPL) Computational Model: Biologically Realistic Simulation of Associative Memory in Cortical Neuropil (v2.0). Zenodo. 2026. https://doi.org/10.5281/zenodo.19798352
+
 ---
 
 ## Table of Contents
@@ -489,13 +493,12 @@ form at Group B sites, artificially inflating recall accuracy.
 
 | File | Description |
 |---|---|
-| `ipl_model_1000_crossing_v4.py` | Main model — all simulation logic, learning, recall, statistics, figure generation |
-| `generate_figures.py` | Standalone script to regenerate all three publication figures from saved JSON |
-| `ipl_model_1000_crossing_v4_results_n100.json` | Complete results from 100 simulations (seed 42) |
-| `ipl_comprehensive_v4.png` | 6-panel performance figure (Panels A–F) |
-| `ipl_key_differences_v4.png` | IPL Framework vs. Traditional Hebbian — 3 panels |
-| `ipl_network_architecture_v4.png` | 4-phase neuropil architecture diagram |
-| `README_v4.md` | This documentation |
+| `ipl_model_1000_crossing.py` | Main model — all simulation logic, learning, recall, statistics, figure generation |
+| `ipl_model_1000_crossing_results_n100.json` | Complete results from 100 simulations (seed 42) |
+| `ipl_comprehensive.png` | 6-panel performance figure (Panels A–F) |
+| `ipl_key_differences.png` | IPL Framework vs. Traditional Hebbian — 3 panels |
+| `ipl_network_architecture.png` | 4-phase neuropil architecture diagram |
+| `README.md` | This documentation |
 
 ---
 
@@ -510,23 +513,15 @@ pip install numpy matplotlib scipy
 ### Run the full simulation (100 runs + figures)
 
 ```bash
-python ipl_model_1000_crossing_v4.py
+python ipl_model_1000_crossing.py
 ```
 
 This executes in sequence:
 1. Sets the global random seed (42)
 2. Runs 100 independent simulations (~15–20 seconds on a standard CPU)
 3. Runs capacity scaling across 5 volumes (20 runs each)
-4. Saves results to `ipl_model_1000_crossing_v4_results_n100.json`
-5. Generates and saves `ipl_comprehensive_v4.png`
-
-### Regenerate publication figures from saved JSON
-
-```bash
-python generate_figures.py
-```
-
-Reads the existing JSON and produces all three figures without re-running the simulation.
+4. Saves results to `ipl_model_1000_crossing_results_n100.json`
+5. Generates and saves `ipl_comprehensive.png`
 
 ### Expected output (key lines)
 
@@ -611,10 +606,10 @@ Bell→Food: p < 0.001 ***, Cohen's d = 30.54
     *J Neurosci*, 13(1):334–350.
     https://doi.org/10.1523/JNEUROSCI.13-01-00334.1993
 
-17. Spacek J, Harris KM. (1998). Three-dimensional organization of smooth endoplasmic
+17. Spacek J, Harris KM. (1997). Three-dimensional organization of smooth endoplasmic
     reticulum in hippocampal CA1 dendrites and dendritic spines of the immature and
-    mature rat. *J Neurosci*, 18(19):7546–7558.
-    https://doi.org/10.1523/JNEUROSCI.18-19-07546.1998
+    mature rat. *J Neurosci*, 17(1):190–203.
+    https://doi.org/10.1523/JNEUROSCI.17-01-00190.1997
 
 18. Spruston N. (2008). Pyramidal neurons: dendritic structure and synaptic integration.
     *Nat Rev Neurosci*, 9(3):206–221.
